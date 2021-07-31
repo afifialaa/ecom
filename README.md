@@ -45,6 +45,55 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 - **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
 - **[OP.GG](https://op.gg)**
 
+---
+
+## Installation and usage
+1. Clone the repository fetching master branch
+```bash
+git clone --branch master https://github.com/afifialaa/ecom.git
+```
+2. Change directory
+```bash
+cd ecom
+```
+3. Install dependencies
+```bash
+composer install
+```
+4. Create .env file
+```bash
+cp .env.example .env
+```
+5. Change environment variables to appropriate values
+
+6. Create API key
+```bash
+php artisan key:generate
+```
+7. Run migrations
+```bash
+php artisan migrate
+```
+8. Run local server
+```bash
+php artisan serve
+```
+
+now go to localhost:8000
+
+##### TL;DR command list
+```bash
+git clone --branch master https://github.com/afifialaa/ecom.git
+cd ecom
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+php artisan serve
+```
+---
+
+
 ## Contributing
 
 Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
