@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Log;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return response('Ecommerce home page', 200);
 });
+
+#Route::resource('suppliers', SupplierController::class);
+Route::get('/suppliers', 'App\Http\Controllers\SupplierController@index');
+Route::post('/suppliers', 'App\Http\Controllers\SupplierController@create');
+Route::delete('/suppliers/{id}', 'App\Http\Controllers\SupplierController@destroy');
+Route::put('/suppliers/{id}', 'App\Http\Controllers\SupplierController@update');
+Route::get('/suppliers/{id}', 'App\Http\Controllers\SupplierController@show');
