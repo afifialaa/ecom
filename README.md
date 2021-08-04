@@ -74,7 +74,11 @@ php artisan key:generate
 ```bash
 php artisan migrate
 ```
-8. Run local server
+8. Database seeding
+```bash
+php artisan db:seed
+```
+9. Run local server
 ```bash
 php artisan serve
 ```
@@ -89,6 +93,7 @@ composer install
 cp .env.example .env
 php artisan key:generate
 php artisan migrate
+php artisan db:seed
 php artisan serve
 ```
 ---
