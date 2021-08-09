@@ -24,3 +24,16 @@ Route::post('/suppliers', 'App\Http\Controllers\SupplierController@create');
 Route::delete('/suppliers/{id}', 'App\Http\Controllers\SupplierController@destroy');
 Route::put('/suppliers/{id}', 'App\Http\Controllers\SupplierController@update');
 Route::get('/suppliers/{id}', 'App\Http\Controllers\SupplierController@show');
+
+
+Route::post('/category', 'App\Http\Controllers\CategoryController@create');
+Route::get('/category', 'App\Http\Controllers\CategoryController@index');
+Route::delete('/category/{id}', 'App\Http\Controllers\CategoryController@destroy');
+Route::put('/category/{id}', 'App\Http\Controllers\CategoryController@update');
+Route::get('/category/{id}', 'App\Http\Controllers\CategoryController@show');
+
+Route::post('/product', 'App\Http\Controllers\ProductController@create');
+Route::get('/product', 'App\Http\Controllers\ProductController@index');
+Route::delete('/product/{id}', 'App\Http\Controllers\ProductController@destroy');
+Route::put('/product/{id}', 'App\Http\Controllers\ProductController@update');
+Route::get('/product/{id}', 'App\Http\Controllers\ProductController@show');

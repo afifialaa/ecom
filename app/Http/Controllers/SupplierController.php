@@ -111,6 +111,6 @@ class SupplierController extends Controller
     {
         //
         Supplier::findOrFail($id)->delete();
-        return response('supplier was deleted', 200);
+        return response('Supplier was deleted', 200);
     }
 }
