@@ -98,7 +98,7 @@ php artisan serve
 ```
 
 ### Download collection, then import for Postman
-[![Run in Postman](https://s3.amazonaws.com/postman-static/run-button.png)](https://documenter.getpostman.com/view/8543514/Tzz4QJvd)
+[![Run in Postman](https://s3.amazonaws.com/postman-static/run-button.png)](https://documenter.getpostman.com/view/8543514/Tzz4QJvdx)
 ---
 
 

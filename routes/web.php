@@ -37,3 +37,9 @@ Route::get('/product', 'App\Http\Controllers\ProductController@index');
 Route::delete('/product/{id}', 'App\Http\Controllers\ProductController@destroy');
 Route::put('/product/{id}', 'App\Http\Controllers\ProductController@update');
 Route::get('/product/{id}', 'App\Http\Controllers\ProductController@show');
+
+Route::post('/customer', 'App\Http\Controllers\CustomerController@create');
+Route::get('/customer', 'App\Http\Controllers\CustomerController@index');
+Route::delete('/customer/{id}', 'App\Http\Controllers\CustomerController@destroy');
+Route::put('/customer/{id}', 'App\Http\Controllers\CustomerController@update');
+Route::get('/customer/{id}', 'App\Http\Controllers\CustomerController@show');
